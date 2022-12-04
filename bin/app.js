@@ -15,7 +15,7 @@ let guessNumfunc = async () => {
             console.log(chalk.redBright("Right Answer"));
         }
         else {
-            console.log(chalk.blue("Wrong answer, please try again"));
+            console.log(chalk.blue("Sorry, You Failed"));
         }
     }
 };
