@@ -6,10 +6,10 @@
   "type": "module",
   "bin": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/chalk": "^2.2.0",
     "@types/chalk-animation": "^1.6.1",
