@@ -14,9 +14,6 @@ let guessNumfunc = async () => {
         if (randomNum === guessedNum.num) {
             console.log(chalk.redBright("Right Answer"));
         }
-        else if (guessedNum.num === randomNum) {
-            console.log(chalk.blue("Wrong answer, please try again"));
-        }
         else {
             console.log(chalk.blue("Sorry, You Failed"));
         }
