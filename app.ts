@@ -18,8 +18,14 @@ let guessNumfunc =async () => {
             console.log(chalk.redBright("Right Answer"));
             break;
         }else{
-            console.log(chalk.redBright("Wrong Answer, Please Try Again"));
+            
+            if(i < 3){
+                console.log(chalk.redBright("Wrong Answer, Please Try Again"));
+            } else {
+                console.log(chalk.magenta("Sorry all attempts gone! You lost the game"));
+            }
+            }
         }
     
-}}
+}
 guessNumfunc()

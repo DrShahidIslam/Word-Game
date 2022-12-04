@@ -16,7 +16,12 @@ let guessNumfunc = async () => {
             break;
         }
         else {
-            console.log(chalk.redBright("Wrong Answer, Please Try Again"));
+            if (i < 3) {
+                console.log(chalk.redBright("Wrong Answer, Please Try Again"));
+            }
+            else {
+                console.log(chalk.magenta("You lost the game"));
+            }
         }
     }
 };
