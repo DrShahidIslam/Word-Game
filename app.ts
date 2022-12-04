@@ -4,7 +4,7 @@ import chalk from "chalk";
 
 let welcomeMsg = console.log(chalk.bgBlackBright("Welcome to the GAME"));
 
-let randomNum = Math.random() * 10;
+let randomNum = Math.round(Math.random() * 10);
 let guessNumfunc =async () => {
     for(let i=0; i<4; i++){
         let guessedNum : {num:number} = await inquirer.prompt([
@@ -13,8 +13,15 @@ let guessNumfunc =async () => {
         message: "Please type your guessed number"
         },
         ]);
+
         if (randomNum === guessedNum.num){
             console.log(chalk.redBright("Right Answer"));
+        }else if (randomNum !== guessedNum.num){
+            console.log(chalk.redBright("Wrong Answer, Please Try Again"));
+        }else if (randomNum !== guessedNum.num){
+            console.log(chalk.redBright("Wrong Answer, Please Try Again"));
+        }else if (randomNum !== guessedNum.num){
+            console.log(chalk.redBright("Wrong Answer, Please Try Again"));
         }
         else {
             console.log(chalk.blue("Sorry, You Failed"));
