@@ -1,5 +1,5 @@
 {
-  "name": "guesstheword",
+  "name": "simplewordgame",
   "version": "1.0.6",
   "description": "a simple word game",
   "type": "module",
