@@ -1,8 +1,7 @@
 {
   "name": "guesstheword",
   "version": "1.0.5",
-  "description": "",
-  "main": "app.js",
+  "description": "a simple word game",
   "type": "module",
   "bin": {
     "guesstheword": "bin/app.js"
