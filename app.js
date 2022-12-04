@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
 let welcomeMsg = console.log(chalk.bgBlackBright("Welcome to the GAME"));
@@ -11,7 +12,7 @@ let guessNumfunc = async () => {
             },
         ]);
         if (randomNum === guessedNum.num) {
-            console.log("Right Answer");
+            console.log(chalk.redBright("Right Answer"));
         }
         else {
             console.log(chalk.blue("Wrong answer, please try again"));
