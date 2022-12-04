@@ -1,6 +1,6 @@
 {
   "name": "simplewordgame",
-  "version": "1.0.6",
+  "version": "1.0.0",
   "description": "a simple word game",
   "type": "module",
   "bin": {
